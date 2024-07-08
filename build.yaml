@@ -1,5 +1,7 @@
 include:
   - board: dao_left
+    artifact-name: dao_left
   - board: dao_right
+    artifact-name: dao_right
   - board: nice_nano_v2
     shield: settings_reset
