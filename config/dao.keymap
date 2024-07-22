@@ -257,7 +257,7 @@
         vukeys_to_ua {
             bindings = <&m_f14_ua>;
             key-positions = <38 39>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         ua_to_vukeys {
