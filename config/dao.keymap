@@ -265,6 +265,16 @@
             key-positions = <38 39>;
             layers = <1>;
         };
+
+        pwd_r {
+            bindings = <&pwd>;
+            key-positions = <6 11>;
+        };
+
+        pwd_l {
+            bindings = <&pwd>;
+            key-positions = <0 5>;
+        };
     };
 
     macros {
@@ -284,6 +294,13 @@
             label = "M_F14_VUKEYS";
             wait-ms = <30>;
             tap-ms = <40>;
+        };
+
+        pwd: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
+            label = "PWD";
         };
     };
 
