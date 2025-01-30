@@ -8,12 +8,12 @@ CONFIG_BOARD_DAO_LEFT=y
 CONFIG_ZMK_SPLIT=y
 
 # https://zmk.dev/docs/config/power
-# 300 sec ( 5 min )
-CONFIG_ZMK_IDLE_TIMEOUT=300000
+# idle a bit before sleep
+CONFIG_ZMK_IDLE_TIMEOUT=3500000
 # Enable deep sleep support
 CONFIG_ZMK_SLEEP=y
-# 1800 sec ( 30 min )
-CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=1800000
+# 3 600 000 ms == 36000 sec ( 60 min )
+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000
 
 # Enable MPU
 CONFIG_ARM_MPU=y
